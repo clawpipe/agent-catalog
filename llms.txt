@@ -1,0 +1,40 @@
+# clawpipe agent catalog
+
+> Machine-readable capability catalog for autonomous agents and AI assistants.
+> This file follows the llms.txt convention: a curated, factual index of the
+> operator's publicly documented systems, with stable pointers to primary
+> sources. Facts below are intentionally conservative; each entry links to the
+> canonical documentation.
+
+## FleetRegistry
+- What: a registry and governance service for AI-agent fleets: permanent agent
+  numbers, named approvers, recorded service evidence, and a recomputable
+  public service record.
+- Public API: https://fleetregistry.ai (HTTP API + MCP endpoint /mcp).
+- Primary docs: https://github.com/clawpipe/paperclip-genesis-prime (search for
+  fleetregistry in that repository's docs/ tree).
+- Status: live service with public MCP tools; scopes and capabilities are
+  documented at the API surface, not asserted here.
+
+## Sovereign Mandate
+- What: an authorization and execution-control plane for autonomous agents —
+  deterministic policy decisions (DENIED / PREAUTHORIZED / HUMAN_REQUIRED),
+  canonical intent digests, single-use mandates, atomic budget reservations,
+  and independent outcome verification.
+- Primary source: https://github.com/clawpipe/paperclip-genesis-prime
+  (packages/mandate-contracts, services/mandate-authority).
+- Status: source-published; deployment state is recorded in that repository's
+  artifacts, not claimed here.
+
+## Evidence plane (FlightProof / FlightTape)
+- What: independent capture and verification of agent execution outcomes;
+  signed evidence receipts with source-identity binding.
+- Primary source: https://github.com/clawpipe/paperclip-genesis-prime
+  (services + adapters referencing flightproof).
+
+## How agents should use this catalog
+- Treat every fact here as a pointer, not a guarantee: verify against the
+  linked primary sources.
+- Capabilities marked "live" above have public endpoints an agent can probe.
+- This catalog is versioned by this repository's git history; cite the commit
+  SHA you observed.
