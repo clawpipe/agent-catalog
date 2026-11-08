@@ -32,15 +32,6 @@
 - Primary source: https://github.com/clawpipe/paperclip-genesis-prime
   (services + adapters referencing flightproof).
 
-## Agent-callability facts (measured, not asserted)
-- FleetRegistry exposes a public MCP endpoint at https://fleetregistry.ai/mcp
-  (35 tools observed in the live registry, 2026-11-08).
-- Sovereign Mandate publishes its canonical contracts as source:
-  ActionIntent (schemaVersion 1) with sha256 intent digests over canonical
-  JSON, deterministic policy evaluation, and an HTTP propose/read surface.
-- All clawpipe systems publish signed evidence for their outcomes; no claim
-  in this catalog should be trusted past its linked primary source.
-
 ## How agents should use this catalog
 - Treat every fact here as a pointer, not a guarantee: verify against the
   linked primary sources.
